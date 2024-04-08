@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    \
+
+    <script>
+        //creating object
+        let person = {
+            'name': 'Ronnie',
+            'age': 12,
+            'gender': 'male',
+            'name': 'kim',
+            adress: {
+                city: "Nakuru",
+                code: 346,
+                street: "baba"
+            }
+
+        }
+        console.log(person)
+        //accessing values in object
+        console.log(person.adress.city)
+        //adding values or property {.}[""]
+        let myobj = {}
+        myobj.name = 'mill',
+            myobj.age = 23,
+            myobj.gender = 'female',
+            myobj.address = { location: 'nairobi', "code": 324 }
+        myobj['occupation'] = "web dev"
+
+        console.log(myobj)
+
+
+        //updating
+        myobj.name = 'mercy'
+
+
+        //deleting
+        delete myobj.address
+
+        console.log(myobj)
+        //checking
+        console.log(Object.values(myobj))
+        console.log(Object.keys(myobj))
+        console.log(Object.entries(myobj))
+
+    </script>
+</body>
+
+</html>
