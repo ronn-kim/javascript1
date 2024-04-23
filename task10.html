@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        let prods = [['omo', '30kshs', '300'], ['milk', '50kshs', '200'], ['bread', '45kshs', '359'], ['coffee', '5kshs', '79']];
+        let totalStock = prods.reduce((total, prod) => total + parseInt(prod[2]), 0);
+        console.log(`Total stock: ${totalStock}`);
+
+
+    </script>
+</body>
+
+</html>

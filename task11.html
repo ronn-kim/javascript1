@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //    Write a program that takes the date of birth of a person and
+        //     the program outputs the age in terms of years,months,days TODAY.
+        //take year of birth
+        let yearOfBirth = parseInt(prompt('enter year of birth'));
+        let monthOfBirth = parseInt(prompt('enter month of birth'));
+        let dateOfBirth = parseInt(prompt('enter date of birth'));
+        //take today's year
+        const year = parseInt(prompt("enter today's year"));
+        const month = parseInt(prompt("enter today's month"));
+        const day = parseInt(prompt("enter today's date"));
+        //calculate  age 
+        let ageYear = year - yearOfBirth;
+        let ageMonth = month - monthOfBirth;
+        let ageDay = day - dateOfBirth;
+
+        if (ageMonth < 0 || (ageMonth === 0 && ageDay < 0)) {
+            ageYear--;
+            ageMonth += 12
+        }
+        if (ageDay < 0) {
+            ageMonth--;
+            const PrevMonth = new date(year, month - 1, 0);
+            ageDay += PrevMonth.getDate();
+
+        }
+
+        console.log(`Age: ${ageYear} years, ${ageMonth} months, ${ageDay} days`);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.container-fluid{
+  background-color:white;
+  border: solid;
+  position: absolute;
+  align-items: center;
+  padding-left: 1%;
+  margin-top: 4%;
+  margin-left: 35%;
+  
+
+}
+.header {
+  background-color: orangered; 
+  margin-top: 0%;
+  padding-top: 0%;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.head {
+    background-color: orangered;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .form {
+    border: solid;
+    
+} */
+.form label{
+  border: solid;
+  padding: 1%;
+}
+.form input{
+  padding:1%;
+
+}

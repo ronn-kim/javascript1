@@ -2,28 +2,31 @@
 <html lang="en">
 
 <head>
-    <title>page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
 
 
     <script>
-        let first_name = "JOHn";
-        first_name = first_name.toLowerCase();
-        console.log(first_name);
-        //slice
-        let f_sentence="The Dog Breed is German Shepherd";
-        f_sentence=f_sentence.slice(8, 23);
-        console.log(f_sentence);
+        let num = prompt('enter a number')
+        if (num % 2 == 0) {
+            alert('number is even')
+            if (num % 4 == 0) {
+                alert('number is divisible by 4')
+            }
+            else if (num % 4 !==4) {
+                alert('number is not divible by 4')
 
-        let s_sentence = "Deafest for the Clinton forces, this was her moment of triumph";
-        s_sentence = s_sentence.slice(16, 30);
-        console.log(s_sentence);
-        //split
-        let a = "The lazy dog; ran, so fast ;it hit the wall.";
-        a = a.split(';')
-        console.log(a);
+            }
 
+        }
+
+        else {
+            alert('number is odd')
+        }
     </script>
 </body>
 

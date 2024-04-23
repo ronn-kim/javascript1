@@ -1,0 +1,45 @@
+body{
+    
+    background-image: url(net-income-before-taxes-text-260nw-2415359539.webp);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    text-align: center;
+    
+    font-weight: 1000;
+    font-style: normal;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+p{
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(9, 8, 8);
+
+}
+table{
+    margin-left: 430px;
+    text-align: justify;
+    font-size: small;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    border: solid;
+
+}
+form{
+    margin-left: 430px;
+    
+}
+.button{
+    background-color: rgb(166, 166, 245);
+    border: 150;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 500px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Write that prompts the user to input student marks.
+        //  The input should be between 0 and 100.Then output the correct grade: 
+        //  A > 79 , B - 60 to 79, 
+        //  C -  59 to 49, D - 40 to 49, E - less 40
+        let marks=prompt('enter marks')
+        if (marks>=0 && marks<=100){
+            if (marks >= 70)
+                alert("Grade A");
+            else if (marks >= 60)
+                alert("Grade B");
+            else if (marks >= 50)
+                alert("Grade C");
+            else if (marks >= 40)
+                alert("Grade D");
+            else if (marks < 40)
+                alert("Grade E");
+        }
+        else{
+            alert('error')
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // Write a program that takes input of 2 values and adds them.
+        //  The program should only accept numbers and floats only or otherwise display an error
+        //   “invalid character entered” and take the user to re-enter the inputs .
+
+        let v1, v2;
+        while (true) {
+            v1 = prompt('enter value');
+            if (!isNaN(parseFloat(v1)) && isFinite(v1)) {
+                break;
+            }
+
+            else {
+                alert('invalid character entered. Please enter a float or a number');
+            }
+        }
+        while (true) {
+            v2 = prompt('enter a value');
+            if (!isNaN(parseFloat(v2)) && isFinite(v2)) {
+                break;
+            }
+            else {
+                alert('invalid character entered. Please enter a float or a number');
+            }
+        }
+        const result = parseFloat(v1) + parseFloat(v2);
+        console.log(`Result: ${result}`)
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let phoneNumber = prompt('Enter a phone number:');
+        let formattedNumber = phoneNumber.trim();
+
+        if (formattedNumber.startsWith('07')) {
+            formattedNumber = '+254' + formattedNumber.slice(1);
+        } else if (formattedNumber.startsWith('7')) {
+            formattedNumber = '+254' + formattedNumber;
+        } else if (formattedNumber.startsWith('254')) {
+            formattedNumber = '+' + formattedNumber;
+        } else if (formattedNumber.startsWith('01')) {
+            formattedNumber = '+254' + formattedNumber.slice(2);
+        } else if (formattedNumber.startsWith('1')) {
+            formattedNumber = '+254' + formattedNumber;
+        } else {
+            console.log('Invalid phone number format');
+            return;
+        }
+
+        console.log(formattedNumber);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

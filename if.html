@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let marks = prompt('enter marks');
+        if (marks <= 100 && marks >= 0) {
+            if (marks >= 70)
+                alert("Grade A");
+            else if (marks >= 60)
+                alert("Grade B");
+            else if (marks >= 50)
+                alert("Grade C");
+            else if (marks >= 40)
+                alert("Grade D");
+            else if (marks < 40)
+                alert("Grade E");
+        }
+        else {
+            alert("error");
+        }
+
+        //num task
+        let num = prompt("enter num 1")
+        if (num % 2 == 0) {
+            console.log("number is even")
+        }
+        else {
+            console.log("number is odd")
+
+        }
+        //
+        let num1 = prompt("enter num 1");
+        let num2 = prompt("enter num 2");
+        let num3 = prompt("enter num 3");
+
+        if (num1 > num2 && num1 > num3) {
+            console.log(num1 + " is the largest number.");
+        } else if (num2 > num1 && num2 > num3) {
+            console.log(num2 + " is the largest number.");
+        } else {
+            console.log(num3 + " is the largest number.");
+        }
+        //leap year
+        let year =prompt("enter year");
+
+        if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+            console.log(year + " is a leap year.");
+        } else {
+            console.log(year + " is not a leap year.");
+        }
+
+    </script>
+</body>
+
+</html3
